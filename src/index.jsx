@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import App from './App'
+import Root from './Root'
 
 function createElementRoot () {
   let div = document.createElement('dev')
@@ -13,4 +13,4 @@ const elementRoot = createElementRoot()
 
 const root = document.querySelector('body').appendChild(elementRoot)
 
-ReactDOM.render(<App />, root)
+ReactDOM.render(<Root />, root)

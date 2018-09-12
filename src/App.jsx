@@ -4,7 +4,7 @@ export default class App extends React.Component {
   render () {
     return (
       <div>
-        <h1>Samelehe</h1>
+        <h1>Samelehhuhae</h1>
       </div>
     )
   }
