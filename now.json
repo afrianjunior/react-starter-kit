@@ -1,0 +1,12 @@
+{
+  "type": "docker",
+  "public": true,
+  "features": {
+    "cloud": "v2"
+  },
+  "build": {
+    "env": {
+      "BUNDLER": "webpack"
+    }
+  }
+}
