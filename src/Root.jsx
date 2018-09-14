@@ -11,8 +11,8 @@ const devTool = window => {
 
 const store = createStore(
   rootReducer,
-  applyMiddleware(reduxThunk),
-  devTool(window)
+  devTool(window),
+  applyMiddleware(reduxThunk)
 )
 
 export default function Root () {

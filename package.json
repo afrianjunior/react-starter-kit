@@ -34,6 +34,7 @@
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "clean-webpack-plugin": "^0.1.19",
     "express": "^4.16.3",
     "react": "^16.4.2",
