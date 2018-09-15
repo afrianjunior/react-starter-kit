@@ -1,3 +1,3 @@
 ### Demo
 
-https://react-webpack-zgrbnluuza.now.sh
+https://react-starter-kit-iadshsomlp.now.sh/
