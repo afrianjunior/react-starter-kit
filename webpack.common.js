@@ -20,7 +20,8 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
-      api: path.resolve(__dirname, 'src/common/api')
+      api: path.resolve(__dirname, 'src/common/api'),
+      ui: path.resolve(__dirname, 'src/ui')
     }
   },
   plugins: [

@@ -1,4 +1,4 @@
-import * as actionTypes from '../actions/planetActions/types'
+import * as actionTypes from '../actions/planetsActions/types'
 const initialState = {
   planet: {
     items: [],
@@ -8,7 +8,7 @@ const initialState = {
   errorMessage: null
 }
 
-const planetReducer = (state = initialState, action) => {
+const planetsReducer = (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.FETCHING_PLANETS:
       return { ...state, status: action.status }
@@ -21,4 +21,4 @@ const planetReducer = (state = initialState, action) => {
   }
 }
 
-export default planetReducer
+export default planetsReducer

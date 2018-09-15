@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
 
-import planetReducer from './planetReducer'
+import planetsReducer from './planetsReducer'
 export default combineReducers({
-  planetReducer
+  planetsReducer
 })
