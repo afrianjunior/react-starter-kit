@@ -10,7 +10,7 @@ export default function App () {
         <h1>Star Wars Planets</h1>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/wewe" component={Detail} />
+          <Route exact path="/detail" component={Detail} />
         </Switch>
       </Layout>
     </Router>
