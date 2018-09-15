@@ -2,11 +2,14 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import { getPlanets } from '../../actions/planetsActions'
+import { Link } from 'react-router-dom'
 
 class Home extends Component {
   componentDidMount () {
-    const { getPlanets } = this.props
-    getPlanets()
+    const { getPlanets, status } = this.props
+    if (status !== 'fetched') {
+      getPlanets()
+    }
   }
   handleRenderPlanets () {
     const { planet, status } = this.props
@@ -19,7 +22,9 @@ class Home extends Component {
         return (
           <ul>
             {planet.items.map((planet, key) => (
-              <li key={key}>{planet.name}</li>
+              <li key={key}>
+                <Link to="/detail">{planet.name}</Link>
+              </li>
             ))}
           </ul>
         )
